@@ -1,24 +1,31 @@
-# Conversational Mood Historian
+# 🎤 AI Mood Journal (Streamlit)
 
-AI-powered personal mood tracker that records daily text/voice journals, detects emotions, and generates weekly "emotional weather reports."
+An AI-powered mood journal that allows users to **speak their thoughts** 🎙️,  
+analyzes them using **NLP emotion detection**, stores them in a database,  
+and generates **reports & suggestions** 📊✨.
 
-## Features
-- Log daily journal entries (text or voice-to-text)
-- Sentiment & emotion detection (NLP)
-- Trend charts (weekly/monthly)
-- Automatic weekly mood summaries
-- Data stored locally (CSV by default)
+---
 
-## Setup
+## 🚀 Features
+- 🎤 Speech input (no typing required!)
+- 🤖 Emotion analysis with Hugging Face Transformers
+- 🗄️ Data stored in SQLite
+- 📊 Interactive mood trends visualization
+- 💡 Personalized well-being suggestions
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** Streamlit
+- **Backend:** Python (SQLite database)
+- **AI Model:** `j-hartmann/emotion-english-distilroberta-base`
+- **Deployment:** Hugging Face Spaces
+
+---
+
+## ▶️ Run Locally
 ```bash
-git clone <repo-url>
-cd conversational-mood-historian
-python -m venv .venv
-source .venv/bin/activate   # or .venv\Scripts\activate (Windows)
+git clone https://huggingface.co/spaces/YourUsername/mood-journal
+cd mood-journal
 pip install -r requirements.txt
-```
-
-## Run
-```bash
 streamlit run app.py
-```
